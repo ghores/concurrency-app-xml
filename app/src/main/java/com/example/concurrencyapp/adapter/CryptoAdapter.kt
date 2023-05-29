@@ -17,7 +17,7 @@ import com.example.concurrencyapp.utils.roundToThreeDecimals
 import com.example.concurrencyapp.utils.toDoubleFloatPairs
 import javax.inject.Inject
 
-class CryptosAdapter @Inject() constructor() : RecyclerView.Adapter<CryptosAdapter.ViewHolder>() {
+class CryptosAdapter @Inject constructor() : RecyclerView.Adapter<CryptosAdapter.ViewHolder>() {
 
     private lateinit var binding: ItemBinding
     private lateinit var context: Context
@@ -37,14 +37,14 @@ class CryptosAdapter @Inject() constructor() : RecyclerView.Adapter<CryptosAdapt
         holder.setIsRecyclable(false)
     }
 
-    inner class ViewHolder() : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder : RecyclerView.ViewHolder(binding.root) {
 
         @SuppressLint("SetTextI18n")
         fun bind(item: ResponseCoinsList.ResponseCoinsListItem) {
             binding.apply {
                 tvName.text = item.id
-                tvSymbol.text = item.symbol?.uppercase()
-                tvPrice.text = "€${item.currentPrice?.roundToThreeDecimals()}"
+                tvSymbol.text = item.symbol.uppercase()
+                tvPrice.text = "€${item.currentPrice.roundToThreeDecimals()}"
                 imgCrypto.load(item.image) {
                     crossfade(true)
                     crossfade(500)
@@ -59,7 +59,7 @@ class CryptosAdapter @Inject() constructor() : RecyclerView.Adapter<CryptosAdapt
                     )
 
                 lineChart.animation.duration = Constants.animationDuration
-                val listData = item.sparklineIn7d?.price.toDoubleFloatPairs()
+                val listData = item.sparklineIn7d.price.toDoubleFloatPairs()
                 lineChart.animate(listData)
 
                 root.setOnClickListener {

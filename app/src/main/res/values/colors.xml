@@ -13,4 +13,5 @@
     <color name="bgColor">#424242</color>
     <color name="chartLineColor">#FFF176</color>
     <color name="chartBG">#2a9085</color>
+    <color name="blackDark">#0e1417</color>
 </resources>

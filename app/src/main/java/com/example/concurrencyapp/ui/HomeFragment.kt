@@ -11,7 +11,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.concurrencyapp.R
 import com.example.concurrencyapp.adapter.CryptosAdapter
 import com.example.concurrencyapp.databinding.FragmentHomeBinding
 import com.example.concurrencyapp.utils.DataStatus
