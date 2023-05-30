@@ -160,7 +160,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/chartLayout">
+            app:layout_constraintTop_toBottomOf="@id/chartLayout"
+            app:layout_constraintVertical_bias="0.533">
 
             <TextView
                 android:id="@+id/tvCategoriesTitle"
@@ -178,6 +179,7 @@
                 android:id="@+id/tvCategories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:layout_marginHorizontal="8dp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tvCategoriesTitle"
                 app:layout_constraintStart_toEndOf="@id/tvCategoriesTitle" />
@@ -198,6 +200,7 @@
                 android:id="@+id/tvGenesisDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:layout_marginHorizontal="8dp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tvGenesisDateTitle"
                 app:layout_constraintStart_toEndOf="@id/tvGenesisDateTitle" />
@@ -241,6 +244,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:paddingBottom="8dp"
+                android:textColor="@color/white"
                 android:scrollbars="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
