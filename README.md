@@ -2,17 +2,17 @@
 Concurrency App using the API from https://www.coingecko.com/
 
 
-the technologies used in this project consist of:
+The technologies used in this project consist of:
 
-1.kotlin
+1.Kotlin
 
-2.xml
+2.Xml
 
 3.Hilt
 
 4.Flow 
 
-5.coroutines
+5.Coroutines
 
 6.Retrofit
 
