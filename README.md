@@ -1,6 +1,5 @@
-# Concurrency App with kotlin **xml**
-Concurrency App using the API from https://www.coingecko.com/
-
+# Concurrency App With Kotlin
+Concurrency App using the API from https://www.coingecko.com
 
 The technologies used in this project consist of:
 
